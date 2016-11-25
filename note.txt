@@ -1,0 +1,19 @@
+main
+{
+  //La taille des independants est égale a la taille de la clique
+  out.k = in.k;
+  //On parcours la matrice d'adjacence
+  for (i = 1; i <= in.numnodes; i++)
+  {
+    //On ajoute les sommets de la clique dans la liste des sommets des independants
+    out.nodes.push = i;
+    for (j = i; j <= in.numnodes; j++)
+    {
+      //si il n'existe pas d'arette dans la clique, on la met dans le graph des independants
+      if(i != j and in.adjacencymatrix[i][j] == 0)
+      {
+	out.edges.push = i, j;
+      }
+    }
+  }
+}
