@@ -1,3 +1,4 @@
+//reduction de clique vers indépendant
 main
 {
   //La taille des independants est égale a la taille de la clique
@@ -15,5 +16,19 @@ main
 	out.edges.push = i, j;
       }
     }
+  }
+}
+
+//reduction de couverture vers indépendant
+main
+{
+  out.k = in.numnodes - in.k;
+  for (i = 0; i < in.edges.size; i++)
+  {
+    out.edges.push = in.edges[i][0], in.edges[i][1];
+  }
+  for (i = 1; i <= in.numnodes; i++)
+  {
+    out.nodes.push = i;
   }
 }
