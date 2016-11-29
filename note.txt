@@ -32,3 +32,24 @@ main
     out.nodes.push = i;
   }
 }
+
+//VERTEX COVER ≤\leq≤ DOMINATING SET
+main
+{
+  var = in.numnodes + 1;
+  for(i = 0; i < in.edges.size; i++)
+  {
+    	out.edges.push = in.edges[i][0], in.edges[i][1];
+ 	out.edges.push = in.edges[i][0], var;
+    	out.edges.push = var, in.edges[i][1];
+    	var++;
+  }
+  
+  for(i = 1; i <= in.numnodes; i++)
+  {
+    if( in.adjacents[i].size != 0) 
+    	out.nodes.push = i;	
+  }
+  
+  out.k = in.k;
+}
